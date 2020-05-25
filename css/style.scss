@@ -253,7 +253,18 @@ ul{
   grid-column: 1 / 13;
   grid-row: 3;
   border-radius: 0 0 3px 3px;
+  position: relative;
 
+  a{
+    height: 65%;
+    position: absolute;
+    margin-top: 9px;
+    right: 10px;
+    img{
+      height: 100%;
+
+    }
+  }
 
 form{
         grid-column: 4 / 12;
@@ -305,4 +316,32 @@ transition: animation .5s ease;
   50% {  box-shadow: 0 0 1px 1px $green-glow;}
   75% {box-shadow: 0 0 2px 2px $green-glow;}
   100% {  box-shadow: 0 0 0 0 $green-glow;}
+}
+
+/* EMOJI BOX */
+.emoji-box{
+  grid-column: 11 / 13;
+height: 250px;
+position: relative;
+}
+
+.emoji-container{
+  background-color: $medium-grey;
+  padding: 10px;
+  margin: 15px 15px 0 15px;
+  height: 100%;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 12.5px solid transparent;
+    border-right: 25px solid $medium-grey;
+    border-bottom: 12.5px solid transparent;
+    position: absolute;
+    top: 250px;
+  }
+
+.emoji-display{
+  display: none;
 }

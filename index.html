@@ -21,7 +21,7 @@
   </header>
 
   <main>
-    <div class="post-card border-radius box-shadow">
+    <div class="post-card border-radius box-shadow toggle-stat-display" id="toggle-stat-display">
       <div class="overlay"></div>
       <div class="id">
         <div class="profile-pic-container">
@@ -58,9 +58,23 @@
 
                 <li class="stat-left overlay-2">Stages Completed:<span class="bold"> 23</span></li>
                   <li class="stat-right overlay-2">2,300</li>
+<li class="stat-left toggle-stats"><a href="#" onclick="toggleStat()">Expand Stats</a></li>
+
+
+
+
+
+                    <li class="stat-left">Stages Completed:<span class="bold"> 23</span></li>
+                      <li class="stat-right">2,300</li>
+
+                      <li class="stat-left overlay-2">Stages Completed:<span class="bold"> 23</span></li>
+                        <li class="stat-right overlay-2">2,300</li>
+
+                        <li class="stat-left"><a href="#" onclick="toggleStat()">Expand Stats</a></li>
 
 
             </ul>
+
 
 <div class="items-collected">
     <h3>Items Collected</h3>
@@ -111,6 +125,17 @@
     element.classList.toggle("emoji-display");
   }
   </script>
+
+
+
+  <script>
+  function toggleStat() {
+    var element =
+    document.getElementById("toggle-stat-display");
+    element.classList.toggle("toggle-stat-display");
+  }
+  </script>
+
 
 
   </div>

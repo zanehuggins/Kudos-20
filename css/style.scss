@@ -286,7 +286,7 @@ h3{
   z-index: 1;
 
 ul{
-  height: 140px;
+  height: auto;
   list-style: none;
   padding: 0 0 0 15px;
   margin: 0 0 0 0;
@@ -313,6 +313,14 @@ ul{
       font-weight: 800;
       color: white;
     }
+  }
+}
+}
+
+.toggle-stat-display{
+.items-collected{
+  ul{
+    height: 140px;
   }
 }
 }

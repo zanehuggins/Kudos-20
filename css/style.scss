@@ -6,6 +6,7 @@ $medium-grey: #2C2C2C;
 $box-shadow: rgba(0,0,0,.5);
 $green: #51AA34;
 $green-glow: rgba(81, 107, 53, .75);
+$red-glow: rgba(154, 24, 19, .5);
 
 
 /* SYMANTIC COMPONENTS */
@@ -30,7 +31,7 @@ main{
   grid-template-columns: repeat(12, 1fr);
 }
 
-/* STYLES */
+/* UNIVERSAL COMPONENTS */
 
 .box-shadow{
     box-shadow: 0px 0px 4px $box-shadow;
@@ -59,7 +60,23 @@ main{
   color: white;
   font-family: 'Rajdhani', sans-serif;
 }
+}
 
+.toggle-button{
+  button{
+background-color: rgba(0,0,0,0);
+  color: white;
+  border: none;
+  font-family: Rajdhani;
+  font-size: 18px;
+    text-decoration: underline;
+}
+button:active{
+  outline: none;
+}
+button:hover{
+  text-decoration: underline;
+}
 }
 /* GRID LAYOUT */
 
@@ -440,3 +457,61 @@ position: relative;
   }
   }
 }
+.action-1{
+  background-color: $medium-grey;
+  color: white;
+  border-radius: 3px;
+display: inline-block;
+position: absolute;
+top: 9px;
+border: .1px solid grey;
+height: 2.65em;
+padding: 0 1em 0 3em;
+margin-left: 10px;
+box-shadow: 0 0 3px 3px rgba(0,0,0,.15);
+transition: all .5s ease;
+
+img{
+  width: auto;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+}
+}
+
+.action-1:hover{
+  animation-name: hoverglow 4s infinite;
+  box-shadow: 0 0 2px 2px $red-glow;
+}
+
+.action-2{
+  background-color: $medium-grey;
+  color: white;
+  border-radius: 3px;
+display: inline-block;
+position: absolute;
+top: 9px;
+border: .1px solid grey;
+height: 2.65em;
+padding: 0 1em 0 3em;
+margin-left: 135px;
+box-shadow: 0 0 3px 3px rgba(0,0,0,.15);
+transition: all .5s ease;
+
+img{
+  width: auto;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+}
+}
+
+.action-2:hover{
+  animation-name: hoverglow 4s infinite;
+  box-shadow: 0 0 2px 2px $red-glow;
+}
+
+
+/* UNIVERSAL COMPONENTS */

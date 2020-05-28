@@ -17,7 +17,7 @@ main {
   display: grid;
   grid-template-columns: repeat(12, 1fr); }
 
-/* STYLES */
+/* UNIVERSAL COMPONENTS */
 .box-shadow {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5); }
 
@@ -40,6 +40,18 @@ main {
 .user-info li {
   color: white;
   font-family: 'Rajdhani', sans-serif; }
+
+.toggle-button button {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  font-family: Rajdhani;
+  font-size: 18px;
+  text-decoration: underline; }
+.toggle-button button:active {
+  outline: none; }
+.toggle-button button:hover {
+  text-decoration: underline; }
 
 /* GRID LAYOUT */
 .grid-container {
@@ -324,5 +336,55 @@ h3 {
   grid-template-rows: 217px auto 55px; }
   #toggle-stat-display-2 .toggle-stat-display-2 .toggle-stats {
     display: block; }
+
+.action-1 {
+  background-color: #2C2C2C;
+  color: white;
+  border-radius: 3px;
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  border: .1px solid grey;
+  height: 2.65em;
+  padding: 0 1em 0 3em;
+  margin-left: 10px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.15);
+  transition: all .5s ease; }
+  .action-1 img {
+    width: auto;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    bottom: 5px; }
+
+.action-1:hover {
+  animation-name: hoverglow 4s infinite;
+  box-shadow: 0 0 2px 2px rgba(154, 24, 19, 0.5); }
+
+.action-2 {
+  background-color: #2C2C2C;
+  color: white;
+  border-radius: 3px;
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  border: .1px solid grey;
+  height: 2.65em;
+  padding: 0 1em 0 3em;
+  margin-left: 135px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.15);
+  transition: all .5s ease; }
+  .action-2 img {
+    width: auto;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    bottom: 5px; }
+
+.action-2:hover {
+  animation-name: hoverglow 4s infinite;
+  box-shadow: 0 0 2px 2px rgba(154, 24, 19, 0.5); }
+
+/* UNIVERSAL COMPONENTS */
 
 /*# sourceMappingURL=style.css.map */

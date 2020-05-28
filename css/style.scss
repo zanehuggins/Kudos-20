@@ -429,3 +429,14 @@ position: relative;
 .emoji-display{
   display: none;
 }
+
+#toggle-stat-display-2{
+  .toggle-stat-display-2{
+
+    grid-template-rows: 217px auto 55px;
+
+  .toggle-stats{
+    display: block;
+  }
+  }
+}

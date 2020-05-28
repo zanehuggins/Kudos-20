@@ -320,4 +320,9 @@ h3 {
 .emoji-display {
   display: none; }
 
+#toggle-stat-display-2 .toggle-stat-display-2 {
+  grid-template-rows: 217px auto 55px; }
+  #toggle-stat-display-2 .toggle-stat-display-2 .toggle-stats {
+    display: block; }
+
 /*# sourceMappingURL=style.css.map */

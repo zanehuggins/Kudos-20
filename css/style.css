@@ -47,7 +47,9 @@ main {
   border: none;
   font-family: Rajdhani;
   font-size: 18px;
-  text-decoration: underline; }
+  text-decoration: underline;
+  padding-left: 0;
+  cursor: pointer; }
 .toggle-button button:active {
   outline: none; }
 .toggle-button button:hover {
@@ -223,7 +225,7 @@ h3 {
     padding: 0 0 0 15px;
     margin: 0 0 0 0;
     border-left: 1px solid white;
-    overflow: scroll; }
+    overflow: hidden; }
     .items-collected ul .items-collected-title {
       width: 100%; }
     .items-collected ul li {
@@ -244,7 +246,7 @@ h3 {
         color: white; }
 
 .toggle-stat-display .items-collected ul {
-  height: 140px; }
+  height: 125px; }
 
 .social-bar {
   background-color: #232323;
@@ -267,16 +269,18 @@ h3 {
     grid-row: 1;
     position: relative;
     margin-left: .75em; }
-  .social-bar textarea {
+  .social-bar .textarea {
     padding: .75em;
     margin-top: 9px;
     background-color: #2C2C2C;
     color: white;
     border-radius: 3px;
-    height: 1em;
+    height: 15px;
     width: 460px;
+    outline: none;
+    border: 1px solid grey;
     display: inline-block; }
-  .social-bar textarea:focus {
+  .social-bar .textarea:focus {
     outline-color: #51AA34 !important; }
 
 .post {
@@ -287,7 +291,7 @@ h3 {
   position: absolute;
   top: 9px;
   border: .1px solid grey;
-  height: 2.65em;
+  height: 35px;
   padding: 0 4em 0 4em;
   margin-left: 10px;
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.15);
@@ -348,8 +352,8 @@ h3 {
   position: absolute;
   top: 9px;
   border: .1px solid grey;
-  height: 2.65em;
-  padding: 0 1em 0 3em;
+  height: 35px;
+  width: 48px;
   margin-left: 10px;
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.15);
   transition: all .5s ease; }
@@ -357,7 +361,7 @@ h3 {
     width: auto;
     height: 20px;
     position: absolute;
-    left: 10px;
+    left: 11px;
     bottom: 5px; }
 
 .action-1:hover {
@@ -372,9 +376,9 @@ h3 {
   position: absolute;
   top: 9px;
   border: .1px solid grey;
-  height: 2.65em;
-  padding: 0 1em 0 3em;
-  margin-left: 135px;
+  height: 35px;
+  width: 48px;
+  margin-left: 68px;
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.15);
   transition: all .5s ease; }
   .action-2 img {
@@ -386,7 +390,79 @@ h3 {
 
 .action-2:hover {
   animation-name: hoverglow 4s infinite;
+  box-shadow: 0 0 2px 2px rgba(81, 107, 53, 0.75); }
+
+.action-1 {
+  background-color: #2C2C2C;
+  color: white;
+  border-radius: 3px;
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  border: .1px solid grey;
+  height: 35px;
+  width: 48px;
+  margin-left: 10px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.15);
+  transition: all .5s ease; }
+  .action-1 img {
+    width: auto;
+    height: 20px;
+    position: absolute;
+    left: 11px;
+    bottom: 5px; }
+
+.action-1:hover {
+  animation-name: hoverglow 4s infinite;
   box-shadow: 0 0 2px 2px rgba(154, 24, 19, 0.5); }
+
+.action-3 {
+  background-color: #2C2C2C;
+  color: white;
+  border-radius: 3px;
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  border: .1px solid grey;
+  height: 35px;
+  width: 48px;
+  margin-left: 127px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.15);
+  transition: all .5s ease; }
+  .action-3 img {
+    width: auto;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    bottom: 5px; }
+
+.action-3:hover {
+  animation-name: hoverglow 4s infinite;
+  box-shadow: 0 0 2px 2px rgba(81, 107, 53, 0.75); }
+
+.action-4 {
+  background-color: #2C2C2C;
+  color: white;
+  border-radius: 3px;
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  border: .1px solid grey;
+  height: 35px;
+  width: 48px;
+  margin-left: 185px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.15);
+  transition: all .5s ease; }
+  .action-4 img {
+    width: auto;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    bottom: 5px; }
+
+.action-4:hover {
+  animation-name: hoverglow 4s infinite;
+  box-shadow: 0 0 2px 2px rgba(81, 107, 53, 0.75); }
 
 /* ID Tags */
 #notification-challenge {

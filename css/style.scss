@@ -64,12 +64,14 @@ main{
 
 .toggle-button{
   button{
-background-color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0);
   color: white;
   border: none;
   font-family: Rajdhani;
   font-size: 18px;
-    text-decoration: underline;
+  text-decoration: underline;
+  padding-left: 0;
+  cursor: pointer;
 }
 button:active{
   outline: none;
@@ -316,7 +318,7 @@ ul{
   padding: 0 0 0 15px;
   margin: 0 0 0 0;
   border-left: 1px solid white;
-  overflow: scroll;
+  overflow: hidden;
   .items-collected-title{
     width: 100%;
   }
@@ -345,7 +347,7 @@ ul{
 .toggle-stat-display{
 .items-collected{
   ul{
-    height: 140px;
+    height: 125px;
   }
 }
 }
@@ -378,19 +380,20 @@ form{
         margin-left: .75em;
 
 }
-  textarea{
+  .textarea{
     padding: .75em;
     margin-top: 9px;
     background-color: $medium-grey;
     color: white;
     border-radius: 3px;
-    height: 1em;
+    height: 15px;
     width: 460px;
-
+    outline: none;
+    border: 1px solid grey;
     display: inline-block;
   }
 
- textarea:focus{
+ .textarea:focus{
    outline-color: $green!important;
  }
 }
@@ -403,7 +406,7 @@ display: inline-block;
 position: absolute;
 top: 9px;
 border: .1px solid grey;
-height: 2.65em;
+height: 35px;
 padding: 0 4em 0 4em;
 margin-left: 10px;
 box-shadow: 0 0 3px 3px rgba(0,0,0,.15);
@@ -469,21 +472,21 @@ position: relative;
   background-color: $medium-grey;
   color: white;
   border-radius: 3px;
-display: inline-block;
-position: absolute;
-top: 9px;
-border: .1px solid grey;
-height: 2.65em;
-padding: 0 1em 0 3em;
-margin-left: 10px;
-box-shadow: 0 0 3px 3px rgba(0,0,0,.15);
-transition: all .5s ease;
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  border: .1px solid grey;
+  height: 35px;
+  width: 48px;
+  margin-left: 10px;
+  box-shadow: 0 0 3px 3px rgba(0,0,0,.15);
+  transition: all .5s ease;
 
 img{
   width: auto;
   height: 20px;
   position: absolute;
-  left: 10px;
+  left: 11px;
   bottom: 5px;
 }
 }
@@ -497,15 +500,15 @@ img{
   background-color: $medium-grey;
   color: white;
   border-radius: 3px;
-display: inline-block;
-position: absolute;
-top: 9px;
-border: .1px solid grey;
-height: 2.65em;
-padding: 0 1em 0 3em;
-margin-left: 135px;
-box-shadow: 0 0 3px 3px rgba(0,0,0,.15);
-transition: all .5s ease;
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  border: .1px solid grey;
+  height: 35px;
+  width: 48px;
+  margin-left: 68px;
+  box-shadow: 0 0 3px 3px rgba(0,0,0,.15);
+  transition: all .5s ease;
 
 img{
   width: auto;
@@ -518,9 +521,92 @@ img{
 
 .action-2:hover{
   animation-name: hoverglow 4s infinite;
+  box-shadow: 0 0 2px 2px $green-glow;
+}
+
+.action-1{
+  background-color: $medium-grey;
+  color: white;
+  border-radius: 3px;
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  border: .1px solid grey;
+  height: 35px;
+  width: 48px;
+  margin-left: 10px;
+  box-shadow: 0 0 3px 3px rgba(0,0,0,.15);
+  transition: all .5s ease;
+
+img{
+  width: auto;
+  height: 20px;
+  position: absolute;
+  left: 11px;
+  bottom: 5px;
+}
+}
+
+.action-1:hover{
+  animation-name: hoverglow 4s infinite;
   box-shadow: 0 0 2px 2px $red-glow;
 }
 
+.action-3{
+  background-color: $medium-grey;
+  color: white;
+  border-radius: 3px;
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  border: .1px solid grey;
+  height: 35px;
+  width: 48px;
+  margin-left: 127px;
+  box-shadow: 0 0 3px 3px rgba(0,0,0,.15);
+  transition: all .5s ease;
+
+img{
+  width: auto;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+}
+}
+
+.action-3:hover{
+  animation-name: hoverglow 4s infinite;
+  box-shadow: 0 0 2px 2px $green-glow;
+}
+
+.action-4{
+  background-color: $medium-grey;
+  color: white;
+  border-radius: 3px;
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  border: .1px solid grey;
+  height: 35px;
+  width: 48px;
+  margin-left: 185px;
+  box-shadow: 0 0 3px 3px rgba(0,0,0,.15);
+  transition: all .5s ease;
+
+img{
+  width: auto;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+}
+}
+
+.action-4:hover{
+  animation-name: hoverglow 4s infinite;
+  box-shadow: 0 0 2px 2px $green-glow;
+}
 
 
 /* ID Tags */

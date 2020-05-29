@@ -78,6 +78,14 @@ button:hover{
   text-decoration: underline;
 }
 }
+
+.notification{
+display: none;
+}
+
+
+
+
 /* GRID LAYOUT */
 
 .grid-container{
@@ -514,4 +522,33 @@ img{
 }
 
 
-/* UNIVERSAL COMPONENTS */
+
+/* ID Tags */
+#notification-challenge{
+  grid-column: 11 / 13;
+  height: 10em;
+  background-color: $medium-grey;
+  margin: 10px;
+  margin-top: 62vh;
+  font-family: Rajdhani;
+  color: white;
+  font-size: 1.2em;
+
+
+  img{
+  width: 50%;
+    padding-left:25%;
+    padding-right: 25%;
+    margin-top: 1em;
+  }
+  h4{
+    text-align: center;
+    padding: 0;
+    margin-bottom: .5em;
+  }
+  button{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
+  }
+}

@@ -122,8 +122,8 @@
 <div class="social-bar">
 
 <div class="actions-bar">
-<button class="action-1"><img src="images/actions/battle.svg" alt="battle">Challenge</button>
-<button class="action-2"><img src="images/actions/battle.svg" alt="battle">Challenge</button>
+<button class="action-1" onclick="notification()"><img src="images/actions/battle.svg" alt="battle">Challenge</button>
+<button class="action-2" onclick="notification()"><img src="images/actions/battle.svg" alt="battle">Challenge</button>
 </div>
   <form>
 
@@ -134,6 +134,8 @@
 
   <a href="#"><img src="images/kudos.svg" alt="#" onclick="myFunction()"></a>
 
+
+
   <script>
   function myFunction() {
     var element =
@@ -143,12 +145,19 @@
   </script>
 
 
-
   <script>
   function toggleStat() {
     var element =
     document.getElementById("toggle-stat-display");
     element.classList.toggle("toggle-stat-display");
+  }
+  </script>
+
+  <script>
+  function notification() {
+    var element =
+    document.getElementById("notification-challenge");
+    element.classList.toggle("notification");
   }
   </script>
 
@@ -297,6 +306,12 @@ element.classList.toggle("toggle-stat-display-2");
     </div>
 <div class="emoji-container">
 </div>
+  </div>
+
+  <div class="notification notification-challenge border-radius" id="notification-challenge">
+    <img src="images/actions/battle.svg" alt="Challenge">
+<h4>Challenge Requested</h4>
+<button class="close" onclick="notification()">X</button>
   </div>
 
     </div> <!--CLOSES GRID CONTAINER -->

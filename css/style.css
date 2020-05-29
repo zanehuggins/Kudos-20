@@ -53,6 +53,9 @@ main {
 .toggle-button button:hover {
   text-decoration: underline; }
 
+.notification {
+  display: none; }
+
 /* GRID LAYOUT */
 .grid-container {
   grid-template-columns: 1fr 125px 125px 125px 125px 125px 125px 125px 125px 125px 125px 1fr;
@@ -385,6 +388,28 @@ h3 {
   animation-name: hoverglow 4s infinite;
   box-shadow: 0 0 2px 2px rgba(154, 24, 19, 0.5); }
 
-/* UNIVERSAL COMPONENTS */
+/* ID Tags */
+#notification-challenge {
+  grid-column: 11 / 13;
+  height: 10em;
+  background-color: #2C2C2C;
+  margin: 10px;
+  margin-top: 62vh;
+  font-family: Rajdhani;
+  color: white;
+  font-size: 1.2em; }
+  #notification-challenge img {
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-top: 1em; }
+  #notification-challenge h4 {
+    text-align: center;
+    padding: 0;
+    margin-bottom: .5em; }
+  #notification-challenge button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */

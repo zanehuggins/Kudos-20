@@ -13,9 +13,7 @@ header {
   padding: 0 !important; }
 
 main {
-  grid-column: 3 / 11;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr); }
+  grid-column: 3 / 11; }
 
 .notification-dock {
   grid-column: 1 / 3;
@@ -71,13 +69,10 @@ main {
 .grid-container {
   grid-template-columns: 1fr 125px 125px 125px 125px 125px 125px 125px 125px 125px 125px 1fr;
   padding: 0 !important;
-  margin: 0;
-  display: grid;
-  grid-template-rows: auto; }
+  display: grid; }
 
 /* COMPONENTS */
 .post-card {
-  grid-column: 1 / 13;
   background-image: url("../images/ror/background.jpg");
   background-position: center;
   margin-top: 15px;
@@ -86,7 +81,8 @@ main {
   grid-template-columns: repeat(12, 1fr);
   */
   grid-template-columns: 1fr 1fr 1fr 65px 65px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto 0 55px; }
+  grid-template-rows: auto 0px 55px;
+  height: auto; }
   .post-card .toggle-stats {
     display: none; }
   .post-card .overlay {
@@ -179,7 +175,8 @@ main {
   background-color: rgba(0, 0, 0, 0.6); }
 
 .toggle-stat-display {
-  grid-template-rows: min(217px) auto 55px; }
+  grid-template-rows: 217px 0 55px;
+  height: auto; }
   .toggle-stat-display .toggle-stats {
     display: block; }
 

@@ -27,8 +27,7 @@ header{
 
 main{
   grid-column: 3 / 11;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+
 }
 
 .notification-dock{
@@ -105,25 +104,25 @@ display: none;
 
   grid-template-columns: 1fr 125px 125px 125px 125px 125px 125px 125px 125px 125px 125px 1fr;
   padding: 0!important;
-  margin: 0;
   display: grid;
-  grid-template-rows: auto;
+
 }
 
 /* COMPONENTS */
 
 .post-card{
-  grid-column: 1 / 13;
+
   background-image: url('../images/ror/background.jpg');
   background-position: center;
-
   margin-top: 15px;
   display: grid;
   /*
   grid-template-columns: repeat(12, 1fr);
   */
   grid-template-columns: 1fr 1fr 1fr 65px 65px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto 0 55px;
+  grid-template-rows: auto 0px 55px;
+  height: auto;
+
 
   .toggle-stats{
     display: none;
@@ -254,7 +253,8 @@ font-weight: 700;
 }
 
 .toggle-stat-display{
-  grid-template-rows: min(217px) auto 55px;
+  grid-template-rows: 217px 0 55px;
+  height: auto;
 
 .toggle-stats{
   display: block;

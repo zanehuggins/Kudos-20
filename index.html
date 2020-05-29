@@ -123,7 +123,7 @@
 
 <div class="actions-bar">
 <button class="action-1" onclick="notification()" title="Challenge Player"><img src="images/actions/battle.svg" alt="battle"></button>
-<button class="action-2" onclick="notification()" title="Request Walkthrough"><img src="images/actions/watch.svg" alt="battle"></button>
+<button class="action-2" onclick="notification2()" title="Request Walkthrough"><img src="images/actions/watch.svg" alt="battle"></button>
 <button class="action-3" onclick="notification()"><img src="images/actions/battle.svg" alt="battle"></button>
 <button class="action-4" onclick="notification()" title="Request Walkthrough"><img src="images/actions/battle.svg" alt="battle"></button>
 </div>
@@ -160,6 +160,14 @@
     var element =
     document.getElementById("notification-challenge");
     element.classList.toggle("notification");
+  }
+  </script>
+
+  <script>
+  function notification2() {
+    var element =
+    document.getElementById("notification-video");
+    element.classList.toggle("notification-2");
   }
   </script>
 
@@ -310,12 +318,22 @@ element.classList.toggle("toggle-stat-display-2");
 </div>
   </div>
 
+<div class="notification-dock">
+
   <div class="notification notification-challenge border-radius" id="notification-challenge">
     <img src="images/actions/battle.svg" alt="Challenge">
 <h4>Challenge Requested</h4>
 <button class="close" onclick="notification()">X</button>
   </div>
 
+  <div class="notification-2 border-radius" id="notification-video">
+    <img src="images/actions/watch.svg" alt="Challenge">
+<h4>Video Requested</h4>
+<button class="close" onclick="notification2()">X</button>
+
+
+</div><!-- CLOSES NOTIFICATION DOCK -->
+</div>
     </div> <!--CLOSES GRID CONTAINER -->
     </body>
 

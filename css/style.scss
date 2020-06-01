@@ -42,6 +42,7 @@ main{
 .box-shadow{
     box-shadow: 0px 0px 4px $box-shadow;
 }
+
 .border-radius{
   border-radius: 4px;
 }
@@ -95,6 +96,10 @@ display: none;
 display: none;
 }
 
+.glow-red{
+  box-shadow: 0 0 3px 3px rgba(154, 24, 19, .5);
+
+}
 
 
 
@@ -111,7 +116,7 @@ display: none;
 /* COMPONENTS */
 
 .post-card{
-
+  transition: .5s ease;
   background-image: url('../images/ror/background.jpg');
   background-position: center;
   margin-top: 15px;
@@ -475,7 +480,7 @@ form{
 }
 
 .post{
-  background-color: $medium-grey;
+  background-color: $dark-grey;
   color: white;
   border-radius: 3px;
 display: inline-block;
@@ -545,7 +550,7 @@ position: relative;
   }
 }
 .action-1{
-  background-color: $medium-grey;
+  background-color: $dark-grey!important;
   color: white;
   border-radius: 3px;
   display: inline-block;
@@ -578,7 +583,7 @@ img{
 }
 
 .action-2{
-  background-color: $medium-grey;
+  background-color: $dark-grey;
   color: white;
   border-radius: 3px;
   display: inline-block;
@@ -611,7 +616,7 @@ img{
 }
 
 .action-1{
-  background-color: $medium-grey;
+  background-color: $dark-grey;
   color: white;
   border-radius: 3px;
   display: inline-block;
@@ -639,7 +644,7 @@ img{
 }
 
 .action-3{
-  background-color: $medium-grey;
+  background-color: $dark-grey;
   color: white;
   border-radius: 3px;
   display: inline-block;
@@ -667,7 +672,7 @@ img{
 }
 
 .action-4{
-  background-color: $medium-grey;
+  background-color: $dark-grey;
   color: white;
   border-radius: 3px;
   display: inline-block;

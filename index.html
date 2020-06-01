@@ -45,13 +45,35 @@
           <div class="indicator-1"></div>
         </div>
 
+
+        <div class="notification-challenge-2 border-radius glow-red" id="notification-challenge-response">
+          <img src="images/actions/battle.svg" alt="Challenge">
+      <h4>Challenge Requested!</h4>
+      <button class="close" onclick="closeAll()">X</button>
+          <div class="indicator-1"></div>
+        </div>
+
         <script>
         function glowRed() {
           var element =
-          document.getElementById("notification-stat-display");
+          document.getElementById("notification-challenge-response");
           element.classList.toggle("glow-red");
         }
         </script>
+
+        <script>
+        function closeAll() {
+          var element =
+          document.getElementById("notification-challenge-response");
+          element.classList.toggle("glow-red");
+
+          document.getElementById("notification-challenge");
+          element.classList.toggle("notification");
+        }
+        </script>
+
+
+
 
         </div><!-- CLOSES ID -->
 
@@ -187,6 +209,7 @@
     element.classList.toggle("notification-2");
   }
   </script>
+
 
 
 

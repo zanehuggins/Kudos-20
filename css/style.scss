@@ -92,14 +92,12 @@ button:hover{
 display: none;
 }
 
+
 .notification-2{
 display: none;
 }
 
-.glow-red{
-  box-shadow: 0 0 3px 3px rgba(154, 24, 19, .5);
 
-}
 
 
 
@@ -247,14 +245,84 @@ img{
        bottom: -12.5px;
        left: 25px;
 
+
      }
 }
+
+
+.notification-challenge-2{
+  height: 6.5em;
+  background-color: rgba(20,20,20,1);
+  font-family: Rajdhani;
+  color: white;
+  font-size: 1.2em;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0px;
+  z-index: 4;
+
+
+
+
+
+
+
+  img{
+  width: 18%;
+    padding-left:5%;
+    margin-top: 2.25em;
+    margin-bottom: 0;
+    float: left;
+  }
+
+  h4{
+    text-align: center;
+    padding: 8% 0 0 5%;
+
+    margin-bottom: .5em;
+    margin-top: .5em;
+    float: left;
+  }
+  button{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  a{
+    color: white;
+    padding-left: 5%;
+  }
+
+  .indicator-1 {
+       width: 0;
+       height: 0;
+       border-left: 10px solid transparent;
+       border-right: 10px solid transparent;
+       border-top: 20px solid rgba(20,20,20,1);
+       position: absolute;
+       z-index: 5;
+       bottom: -12.5px;
+       left: 25px;
+
+     }
+}
+
 
 
 
 /*action content box 1-close*/
 
 }
+}
+
+.glow-red{
+display: none;
+
 }
 
 .character-column{

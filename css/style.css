@@ -65,9 +65,6 @@ main {
 .notification-2 {
   display: none; }
 
-.glow-red {
-  box-shadow: 0 0 3px 3px rgba(154, 24, 19, 0.5); }
-
 /* GRID LAYOUT */
 .grid-container {
   grid-template-columns: 1fr 125px 125px 125px 125px 125px 125px 125px 125px 125px 125px 1fr;
@@ -176,6 +173,52 @@ main {
         z-index: 5;
         bottom: -12.5px;
         left: 25px; }
+    .post-card .id .notification-challenge-2 {
+      height: 6.5em;
+      background-color: #141414;
+      font-family: Rajdhani;
+      color: white;
+      font-size: 1.2em;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0px;
+      z-index: 4; }
+      .post-card .id .notification-challenge-2 img {
+        width: 18%;
+        padding-left: 5%;
+        margin-top: 2.25em;
+        margin-bottom: 0;
+        float: left; }
+      .post-card .id .notification-challenge-2 h4 {
+        text-align: center;
+        padding: 8% 0 0 5%;
+        margin-bottom: .5em;
+        margin-top: .5em;
+        float: left; }
+      .post-card .id .notification-challenge-2 button {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        color: white;
+        position: absolute;
+        top: 10px;
+        left: 10px; }
+      .post-card .id .notification-challenge-2 a {
+        color: white;
+        padding-left: 5%; }
+      .post-card .id .notification-challenge-2 .indicator-1 {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid #141414;
+        position: absolute;
+        z-index: 5;
+        bottom: -12.5px;
+        left: 25px; }
+
+.glow-red {
+  display: none; }
 
 .character-column {
   grid-column: 4 / 6;

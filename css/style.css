@@ -81,7 +81,7 @@ main {
   grid-template-columns: repeat(12, 1fr);
   */
   grid-template-columns: 1fr 1fr 1fr 65px 65px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto 0px 55px;
+  grid-template-rows: auto 0px 65px;
   height: auto; }
   .post-card .toggle-stats {
     display: none; }
@@ -97,7 +97,10 @@ main {
     border-radius: 3px 0 0 0;
     height: 100%;
     padding-left: 10px;
-    grid-row: 1; }
+    grid-row: 1;
+    position: relative;
+    /*action content box 1-open*/
+    /*action content box 1-close*/ }
     .post-card .id .user-profile-pic {
       margin-top: 20px;
       border-radius: 100%;
@@ -127,6 +130,48 @@ main {
         width: 75%;
         margin-left: 10px;
         margin-top: 30px; }
+    .post-card .id #notification-challenge {
+      height: 6.5em;
+      background-color: #141414;
+      font-family: Rajdhani;
+      color: white;
+      font-size: 1.2em;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0px; }
+      .post-card .id #notification-challenge img {
+        width: 18%;
+        padding-left: 5%;
+        margin-top: 2.25em;
+        margin-bottom: 0;
+        float: left; }
+      .post-card .id #notification-challenge h4 {
+        text-align: center;
+        padding: 8% 0 0 5%;
+        margin-bottom: .5em;
+        margin-top: .5em;
+        float: left; }
+      .post-card .id #notification-challenge button {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        color: white;
+        position: absolute;
+        top: 10px;
+        left: 10px; }
+      .post-card .id #notification-challenge a {
+        color: white;
+        padding-left: 5%; }
+      .post-card .id #notification-challenge .indicator-1 {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid #141414;
+        position: absolute;
+        z-index: 5;
+        bottom: -12.5px;
+        left: 25px; }
 
 .character-column {
   grid-column: 4 / 6;
@@ -175,7 +220,7 @@ main {
   background-color: rgba(0, 0, 0, 0.6); }
 
 .toggle-stat-display {
-  grid-template-rows: 217px 0 55px;
+  grid-template-rows: 217px 0 65px;
   height: auto; }
   .toggle-stat-display .toggle-stats {
     display: block; }
@@ -278,7 +323,7 @@ h3 {
     margin-left: .75em; }
   .social-bar .textarea {
     padding: .75em;
-    margin-top: 9px;
+    margin-top: 15px;
     background-color: #2C2C2C;
     color: white;
     border-radius: 3px;
@@ -296,7 +341,7 @@ h3 {
   border-radius: 3px;
   display: inline-block;
   position: absolute;
-  top: 9px;
+  top: 15px;
   border: .1px solid grey;
   height: 35px;
   padding: 0 4em 0 4em;
@@ -357,7 +402,7 @@ h3 {
   border-radius: 3px;
   display: inline-block;
   position: absolute;
-  top: 9px;
+  top: 15px;
   border: .1px solid grey;
   height: 35px;
   width: 48px;
@@ -375,13 +420,17 @@ h3 {
   animation-name: hoverglow 4s infinite;
   box-shadow: 0 0 2px 2px rgba(154, 24, 19, 0.5); }
 
+.action-1:focus {
+  box-shadow: 0 0 2px 2px rgba(154, 24, 19, 0.5);
+  outline: none; }
+
 .action-2 {
   background-color: #2C2C2C;
   color: white;
   border-radius: 3px;
   display: inline-block;
   position: absolute;
-  top: 9px;
+  top: 15px;
   border: .1px solid grey;
   height: 35px;
   width: 48px;
@@ -399,13 +448,17 @@ h3 {
   animation-name: hoverglow 4s infinite;
   box-shadow: 0 0 2px 2px rgba(81, 107, 53, 0.75); }
 
+.action-2:focus {
+  box-shadow: 0 0 2px 2px rgba(81, 107, 53, 0.75);
+  outline: none; }
+
 .action-1 {
   background-color: #2C2C2C;
   color: white;
   border-radius: 3px;
   display: inline-block;
   position: absolute;
-  top: 9px;
+  top: 15px;
   border: .1px solid grey;
   height: 35px;
   width: 48px;
@@ -429,7 +482,7 @@ h3 {
   border-radius: 3px;
   display: inline-block;
   position: absolute;
-  top: 9px;
+  top: 15px;
   border: .1px solid grey;
   height: 35px;
   width: 48px;
@@ -453,7 +506,7 @@ h3 {
   border-radius: 3px;
   display: inline-block;
   position: absolute;
-  top: 9px;
+  top: 15px;
   border: .1px solid grey;
   height: 35px;
   width: 48px;
@@ -472,34 +525,6 @@ h3 {
   box-shadow: 0 0 2px 2px rgba(81, 107, 53, 0.75); }
 
 /* ID Tags */
-#notification-challenge {
-  height: 6em;
-  background-color: #2C2C2C;
-  font-family: Rajdhani;
-  color: white;
-  font-size: 1.2em;
-  position: relative;
-  margin-bottom: 5px;
-  margin-top: 5px; }
-  #notification-challenge img {
-    width: 25%;
-    padding-left: 37.5%;
-    padding-right: 37.5%;
-    margin-top: 1em;
-    margin-bottom: 0; }
-  #notification-challenge h4 {
-    text-align: center;
-    padding: 0;
-    margin-bottom: .5em;
-    margin-top: .5em; }
-  #notification-challenge button {
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    color: white;
-    position: absolute;
-    top: 10px;
-    left: 10px; }
-
 #notification-video {
   height: 6em;
   background-color: #2C2C2C;

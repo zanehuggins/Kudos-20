@@ -120,7 +120,7 @@ display: none;
   grid-template-columns: repeat(12, 1fr);
   */
   grid-template-columns: 1fr 1fr 1fr 65px 65px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto 0px 55px;
+  grid-template-rows: auto 0px 65px;
   height: auto;
 
 
@@ -144,6 +144,7 @@ z-index: 1;
   height: 100%;
 padding-left: 10px;
 grid-row: 1;
+position: relative;
 
 .user-profile-pic{
   margin-top: 20px;
@@ -184,6 +185,69 @@ img{
   }
 }
 
+/*action content box 1-open*/
+
+#notification-challenge{
+  height: 6.5em;
+  background-color: rgba(20,20,20,1);
+  font-family: Rajdhani;
+  color: white;
+  font-size: 1.2em;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0px;
+
+
+
+
+  img{
+  width: 18%;
+    padding-left:5%;
+    margin-top: 2.25em;
+    margin-bottom: 0;
+    float: left;
+  }
+
+  h4{
+    text-align: center;
+    padding: 8% 0 0 5%;
+
+    margin-bottom: .5em;
+    margin-top: .5em;
+    float: left;
+  }
+  button{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  a{
+    color: white;
+    padding-left: 5%;
+  }
+
+  .indicator-1 {
+       width: 0;
+       height: 0;
+       border-left: 10px solid transparent;
+       border-right: 10px solid transparent;
+       border-top: 20px solid rgba(20,20,20,1);
+       position: absolute;
+       z-index: 5;
+       bottom: -12.5px;
+       left: 25px;
+
+     }
+}
+
+
+
+/*action content box 1-close*/
 
 }
 }
@@ -253,7 +317,7 @@ font-weight: 700;
 }
 
 .toggle-stat-display{
-  grid-template-rows: 217px 0 55px;
+  grid-template-rows: 217px 0 65px;
   height: auto;
 
 .toggle-stats{
@@ -394,7 +458,7 @@ form{
 }
   .textarea{
     padding: .75em;
-    margin-top: 9px;
+    margin-top: 15px;
     background-color: $medium-grey;
     color: white;
     border-radius: 3px;
@@ -416,7 +480,7 @@ form{
   border-radius: 3px;
 display: inline-block;
 position: absolute;
-top: 9px;
+top: 15px;
 border: .1px solid grey;
 height: 35px;
 padding: 0 4em 0 4em;
@@ -486,7 +550,7 @@ position: relative;
   border-radius: 3px;
   display: inline-block;
   position: absolute;
-  top: 9px;
+  top: 15px;
   border: .1px solid grey;
   height: 35px;
   width: 48px;
@@ -508,13 +572,18 @@ img{
   box-shadow: 0 0 2px 2px $red-glow;
 }
 
+.action-1:focus{
+ box-shadow: 0 0 2px 2px $red-glow;
+ outline: none;
+}
+
 .action-2{
   background-color: $medium-grey;
   color: white;
   border-radius: 3px;
   display: inline-block;
   position: absolute;
-  top: 9px;
+  top: 15px;
   border: .1px solid grey;
   height: 35px;
   width: 48px;
@@ -536,13 +605,18 @@ img{
   box-shadow: 0 0 2px 2px $green-glow;
 }
 
+.action-2:focus{
+ box-shadow: 0 0 2px 2px $green-glow;
+ outline: none;
+}
+
 .action-1{
   background-color: $medium-grey;
   color: white;
   border-radius: 3px;
   display: inline-block;
   position: absolute;
-  top: 9px;
+  top: 15px;
   border: .1px solid grey;
   height: 35px;
   width: 48px;
@@ -570,7 +644,7 @@ img{
   border-radius: 3px;
   display: inline-block;
   position: absolute;
-  top: 9px;
+  top: 15px;
   border: .1px solid grey;
   height: 35px;
   width: 48px;
@@ -598,7 +672,7 @@ img{
   border-radius: 3px;
   display: inline-block;
   position: absolute;
-  top: 9px;
+  top: 15px;
   border: .1px solid grey;
   height: 35px;
   width: 48px;
@@ -620,41 +694,8 @@ img{
   box-shadow: 0 0 2px 2px $green-glow;
 }
 
-
 /* ID Tags */
-#notification-challenge{
-  height: 6em;
-  background-color: $medium-grey;
-  font-family: Rajdhani;
-  color: white;
-  font-size: 1.2em;
-  position: relative;
-  margin-bottom: 5px;
-  margin-top: 5px;
 
-
-  img{
-  width: 25%;
-    padding-left:37.5%;
-    padding-right: 37.5%;
-    margin-top: 1em;
-    margin-bottom: 0;
-  }
-  h4{
-    text-align: center;
-    padding: 0;
-    margin-bottom: .5em;
-    margin-top: .5em;
-  }
-  button{
-    background-color: rgba(0,0,0,0);
-    border: none;
-    color: white;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-}
 
 
 

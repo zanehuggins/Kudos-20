@@ -21,6 +21,7 @@
   </header>
 
   <main>
+
     <div class="post-card border-radius box-shadow toggle-stat-display" id="toggle-stat-display">
       <div class="overlay"></div>
       <div class="id">
@@ -36,6 +37,14 @@
 <div class="game-logo-container">
 <img src="images/ror/risk-of-rain.png" alt="Risk of Rain logo">
         </div>
+        <div class="notification notification-challenge border-radius" id="notification-challenge">
+          <img src="images/actions/battle.svg" alt="Challenge">
+      <h4>Request Challenge?</h4>
+      <button class="close" onclick="notification()">X</button>
+      <a href="#">Send Now</a>
+          <div class="indicator-1"></div>
+        </div>
+
         </div><!-- CLOSES ID -->
 
         <div class="character-column">
@@ -320,11 +329,6 @@ element.classList.toggle("toggle-stat-display-2");
 
 <div class="notification-dock">
 
-  <div class="notification notification-challenge border-radius" id="notification-challenge">
-    <img src="images/actions/battle.svg" alt="Challenge">
-<h4>Challenge Requested</h4>
-<button class="close" onclick="notification()">X</button>
-  </div>
 
   <div class="notification-2 border-radius" id="notification-video">
     <img src="images/actions/watch.svg" alt="Challenge">
